@@ -213,7 +213,7 @@ module SimpleCalorimeter ECal {
   set EnergyMin 0.5
   set EnergySignificanceMin 2.0
 
-  set SmearTowerCenter true
+  set SmearTowerCenter false
 
   set pi [expr {acos(-1)}]
 
@@ -314,7 +314,7 @@ module SimpleCalorimeter HCal {
   set EnergyMin 1.0
   set EnergySignificanceMin 2.0
 
-  set SmearTowerCenter true
+  set SmearTowerCenter false
 
  set pi [expr {acos(-1)}]
 
@@ -596,7 +596,7 @@ module FastJetFinder GenJetFinder {
   set JetAlgorithm 6
   set ParameterR 0.4
 
-  set JetPTMin 20.0
+  set JetPTMin 200.0
 }
 
 
@@ -625,7 +625,7 @@ module FastJetFinder FastJetFinder {
   set JetAlgorithm 6
   set ParameterR 0.4
 
-  set JetPTMin 20.0
+  set JetPTMin 200.0
 }
 
 ##################

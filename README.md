@@ -3,11 +3,14 @@
 This repo contains the basics of generating MadGraph events with Pythia8
 and Delphes detector simulation in the UCI's GP cluster.
 
-The specifics of the event are setup on the gen_events_setup.sh file, which calls gen_events_slurm.py to generate the SLURM scripts and submit the jobs.
+The specifics of the event are setup on the gen_events_setup.sh. This file
+creates the files MG5PythiaDelphes.sh with the MG+Pythia+Delphes commands and
+submit_jobs.sh to submit the job to SLURM.
 
 Usage:    
 
       bash gen_events_setup.sh
+      bash [event_tag]/submit_jobs.sh
 
 Run specifications:
 - gridpack: generated via MadGraph
