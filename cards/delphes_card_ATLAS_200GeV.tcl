@@ -598,9 +598,9 @@ module FastJetFinder GenJetFinder {
 
   set JetPTMin 200.0
 
-  ComputeNsubjettiness true
-  Beta 0.5
-  AxisMode 3
+  set ComputeNsubjettiness true
+  set Beta 0.5
+  set AxisMode 3
 }
 
 
@@ -631,9 +631,9 @@ module FastJetFinder FastJetFinder {
 
   set JetPTMin 200.0
 
-  ComputeNsubjettiness true
-  Beta 0.5
-  AxisMode 3
+  set ComputeNsubjettiness true
+  set Beta 0.5
+  set AxisMode 3
 }
 
 ##################
