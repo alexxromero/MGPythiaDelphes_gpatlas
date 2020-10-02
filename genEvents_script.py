@@ -121,7 +121,8 @@ def gen_submit_script(event_script, gridpack, pythia_card, delphes_card,
         script += dedent(
             """\
 
-            FLGS='-t 120 -p atlas -c 2 -o logs/out-%j.txt -e logs/error-%j.txt'
+            #FLGS='-t 120 -p atlas -c 2 -o logs/out-%j.txt -e logs/error-%j.txt'
+            FLGS='-t 300 -p atlas -c 2 -o logs/out-%j.txt -e logs/error-%j.txt'
             sbatch ${{FLGS}} {} {} {} {} {} {} {}
             """.format(event_script, gridpack, pythia_card, delphes_card,
                        seed, pT_range, event_tag)
